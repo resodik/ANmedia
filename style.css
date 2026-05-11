@@ -75,7 +75,7 @@ nav {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    padding: 0;
+    padding-top: 80px;
 }
 
 .banner-img {
