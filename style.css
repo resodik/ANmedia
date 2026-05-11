@@ -75,6 +75,7 @@ nav {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    padding-left: 0;
 }
 
 .banner-img {
@@ -83,7 +84,6 @@ nav {
     height: 100%;
     object-fit: cover;
     padding-top: 80px;
-    padding-left: 0;
 }
 
 .banner::before {
