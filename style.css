@@ -170,4 +170,11 @@ p {
     h2 {
         font-size: 34px;
     }
+
+    #about p {
+        line-height: 1.8;
+        margin-bottom: 16px;
+        font-size: 17px;
+    }
+
 }
