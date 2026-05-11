@@ -156,13 +156,10 @@ p {
         font-size: 14px;
     }
 
-    .banner h1 {
-        font-size: 42px;
-    }
-
-    .banner p {
-        font-size: 18px;
-    }
+  .banner {
+     width: 100%;    
+     height: auto;  
+  }
 
     section {
         padding: 120px 25px;
