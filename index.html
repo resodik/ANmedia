@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
     <title>Moja Strona</title>
 
     <!-- FONT CINZEL -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- ===== MENU ===== -->
 
     <header>
+
         <nav>
 
             <div class="logo">
@@ -28,6 +32,7 @@
             </div>
 
         </nav>
+
     </header>
 
     <!-- ===== BANER ===== -->
@@ -79,30 +84,9 @@
 
     </section>
 
-    <!-- ===== JS ===== -->
-
-    <script>
-
-        const links = document.querySelectorAll('.menu a');
-
-        links.forEach(link => {
-
-            link.addEventListener('click', function(e) {
-
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-
-                targetSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-            });
-
-        });
-
-    </script>
+    <!-- JS -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
