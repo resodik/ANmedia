@@ -76,7 +76,7 @@ nav {
     height: 100vh;
     overflow: hidden;
     padding-left: 0;
-    padding-top: 0px;
+   padding-top: 0px;
 }
 
 .banner-img {
@@ -156,14 +156,25 @@ p {
         font-size: 14px;
     }
 
-  .banner img {
-     width: 100%;    
-     height: auto;  
-  }
+.banner {
+    position: relative;
+    height: 100vh;
+    height: 100dvh; /* NOWOCZESNE MOBILE FIX */
+    overflow: hidden;
+}
 
-    section {
-        padding: 120px 25px;
-    }
+.banner-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+  section {
+    min-height: 100vh;
+    padding: 140px 60px;
+}
 
     h2 {
         font-size: 34px;
