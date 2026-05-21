@@ -263,6 +263,48 @@ section {
     order: 1;
 }
 
+.about-section {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.extra-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.mobile-collapse.open .extra-text {
+    max-height: 500px;
+}
+
+.read-more-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
 .collab-choice,
 .portfolio-choice {
     max-width: 1200px;
