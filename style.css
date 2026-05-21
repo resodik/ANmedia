@@ -315,6 +315,24 @@ section {
     background: rgba(0,0,0,0.15);
 }
 
+.collab-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.collab-card img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.collab-card h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
     .portfolio-choice {
         grid-template-columns: 1fr;
