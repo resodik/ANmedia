@@ -301,48 +301,57 @@
         Napisz do mnie przez formularz poniżej.
       </p>
 
-      <form action="https://formspree.io/f/mgoqqwee" method="POST" class="contact-form">
+     <form action="https://formspree.io/f/mgoqqwee" method="POST" class="contact-form">
 
-        <input
-          type="text"
-          name="name"
-          placeholder="Imię i nazwisko"
-          required
-        >
+    <input
+        type="text"
+        name="imie"
+        placeholder="1. Imię"
+        required
+    >
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Adres e-mail"
-          required
-        >
+    <input
+        type="email"
+        name="email"
+        placeholder="2. Adres e-mail"
+        required
+    >
 
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Numer telefonu"
-        >
+    <input
+        type="text"
+        name="miasto"
+        placeholder="3. Miasto"
+        required
+    >
 
-        <select name="service">
-          <option value="">Wybierz usługę</option>
-          <option>Fotografia</option>
-          <option>Film</option>
-          <option>Fotografia + Film</option>
-          <option>Współpraca reklamowa</option>
-          <option>Inne</option>
-        </select>
+    <textarea
+        name="rodzaj_sesji"
+        placeholder="4. Jaki typ sesji Cię interesuje? (solo, dla pary, ciążowa, rodzinna, reportaż z wydarzenia, inna)"
+        required
+    ></textarea>
 
-        <textarea
-          name="message"
-          placeholder="Opisz swój pomysł lub zapytanie..."
-          required
-        ></textarea>
+    <textarea
+        name="wizja_sesji"
+        placeholder="5. Opowiedz mi trochę o swojej wizji sesji ze mną (inspiracje, miejsce)"
+        required
+    ></textarea>
 
-        <button type="submit">
-          Wyślij wiadomość
-        </button>
+    <textarea
+        name="lubiane_zdjecia"
+        placeholder="6. Czy są rzeczy, których nie chcesz na zdjęciach? Lub coś co Ci się nie podoba?"
+    ></textarea>
 
-      </form>
+    <textarea
+        name="poznal_mnie"
+        placeholder="7. Jak mnie znalazłeś/aś? :)"
+    ></textarea>
+
+    <button type="submit">
+        Wyślij formularz
+    </button>
+
+</form>
+    
     </div>
 
     <div class="section-photo">
