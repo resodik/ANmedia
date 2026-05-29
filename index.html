@@ -167,22 +167,8 @@
     </a>
 
   </div>
-</section>
-    
-<section id="contact" class="section-reverse">
-  <div class="section-content">
-    <div class="section-text">
-      <h2>Kontakt</h2>
-      <p>Tutaj dodaj informacje kontaktowe, formularz lub linki do social mediów.</p>
-    </div>
+</section>    
 
-    <div class="section-photo">
-      <img src="foto/kontakt.jpg" alt="Kontakt">
-    </div>
-  </div>
-</section>
-
-<section id="foto" class="gallery-section">
   <h2>Foto</h2>
 
   <div class="gallery-grid">
@@ -304,6 +290,68 @@
   <video class="lightbox-video" controls playsinline></video>
 </div>
 
+    <section id="contact" class="section-reverse">
+  <div class="section-content">
+
+    <div class="section-text">
+      <h2>Kontakt</h2>
+
+      <p>
+        Masz pomysł na sesję zdjęciową, film promocyjny lub chcesz nawiązać współpracę?
+        Napisz do mnie przez formularz poniżej.
+      </p>
+
+      <form action="https://formspree.io/f/mgoqqwee" method="POST" class="contact-form">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Imię i nazwisko"
+          required
+        >
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Adres e-mail"
+          required
+        >
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Numer telefonu"
+        >
+
+        <select name="service">
+          <option value="">Wybierz usługę</option>
+          <option>Fotografia</option>
+          <option>Film</option>
+          <option>Fotografia + Film</option>
+          <option>Współpraca reklamowa</option>
+          <option>Inne</option>
+        </select>
+
+        <textarea
+          name="message"
+          placeholder="Opisz swój pomysł lub zapytanie..."
+          required
+        ></textarea>
+
+        <button type="submit">
+          Wyślij wiadomość
+        </button>
+
+      </form>
+    </div>
+
+    <div class="section-photo">
+      <img src="foto/kontakt.jpg" alt="Kontakt">
+    </div>
+
+  </div>
+</section>
+    
     <!-- JS -->
     <script src="script.js"></script>
 
