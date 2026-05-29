@@ -6,73 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AN Media</title>
 
-    <!-- FONT CINZEL -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ===== MENU ===== -->
-
-    <header>
-
-        <nav>
-
-            <div class="logo">
+<header>
+    <nav>
+        <div class="logo">
             <img src="foto/Logo.png">
-            </div>
+        </div>
 
-            <div class="menu">
-                <a href="#about">O mnie</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#collab">Współprace</a>
-                <a href="#contact">Kontakt</a>
-            </div>
-
-        </nav>
-
-    </header>
+        <div class="menu">
+            <a href="#about">O mnie</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#collab">Współprace</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+    </nav>
+</header>
 
 <section class="hero-slider">
-  <div class="slide active">
-    <img src="foto/ola.jpg" alt="Sesja fotograficzna">
-  </div>
+    <div class="slide active">
+        <img src="foto/ola.jpg" alt="Sesja fotograficzna">
+    </div>
 
-  <div class="slide">
-    <img src="foto/banner1.jpg" alt="Fotografia portretowa">
-  </div>
+    <div class="slide">
+        <img src="foto/banner1.jpg" alt="Fotografia portretowa">
+    </div>
 
-  <div class="slide">
-    <img src="foto/banner2.jpg" alt="Fotografia ślubna">
-  </div>
+    <div class="slide">
+        <img src="foto/banner2.jpg" alt="Fotografia ślubna">
+    </div>
 
-<div class="slide slide-1">
-    <img src="foto/banner1.jpg" alt="">
-</div>
-  <button class="slider-btn prev">&#10094;</button>
-  <button class="slider-btn next">&#10095;</button>
+    <div class="slide slide-1">
+        <img src="foto/banner1.jpg" alt="">
+    </div>
 
-  <div class="slider-text">
-    <h1></h1>
-    <p></p>
-  </div>
+    <button class="slider-btn prev">&#10094;</button>
+    <button class="slider-btn next">&#10095;</button>
+
+    <div class="slider-text">
+        <h1></h1>
+        <p></p>
+    </div>
 </section>
 
-    <!-- ===== O MNIE ===== -->
+<section id="about">
+    <div class="section-content">
 
-   <section id="about">
-  <div class="section-content">
+        <div class="section-text mobile-collapse">
+            <h2>O mnie</h2>
 
-    <div class="section-text mobile-collapse">
-
-      <h2>O mnie</h2>
-
-      <div class="about-preview">
-
-        <p>Hej, tu Ola. Pora by opowiedzieć trochę o sobie. Od czego by tu zacząć?</p>
+            <div class="about-preview">
+                 <p>Hej, tu Ola. Pora by opowiedzieć trochę o sobie. Od czego by tu zacząć?</p>
 
         <p>
           Filmem i montażem zaczęłam interesować się już jako nastolatka.
@@ -117,248 +105,194 @@
           że to, co naturalne jest po prostu piękne.
         </p>
 
-        <p>
-          Czujesz, że nadajemy na tych samych falach?
-          Zapoznaj się z moją ofertą - na pewno coś podziałamy!
-        </p>
+            </div>
 
-      </div>
+            <button class="read-more-btn">Czytaj więcej</button>
+        </div>
 
-      <button class="read-more-btn">Czytaj więcej</button>
+        <div class="section-photo">
+            <img src="foto/ola.jpg" alt="O mnie">
+        </div>
 
     </div>
+</section>
 
-    <div class="section-photo">
-      <img src="foto/ola.jpg" alt="O mnie">
+<section id="portfolio">
+    <h2></h2>
+
+    <div class="portfolio-choice">
+        <a href="#foto" class="portfolio-card">
+            <img src="foto/foto.jpg" alt="Portfolio foto">
+            <span>FOTO</span>
+        </a>
+
+        <a href="#video" class="portfolio-card">
+            <img src="foto/video.jpg" alt="Portfolio video">
+            <span>VIDEO</span>
+        </a>
     </div>
-
-  </div>
 </section>
 
-    <section id="portfolio">
-  <h2></h2>
-
-  <div class="portfolio-choice">
-    <a href="#foto" class="portfolio-card">
-      <img src="foto/foto.jpg" alt="Portfolio foto">
-      <span>FOTO</span>
-    </a>
-
-    <a href="#video" class="portfolio-card">
-      <img src="foto/video.jpg" alt="Portfolio video">
-      <span>VIDEO</span>
-    </a>
-  </div>
-</section>
-    
 <section id="collab">
-  <h2>Współprace</h2>
+    <h2>Współprace</h2>
 
-  <div class="portfolio-choice">
+    <div class="portfolio-choice">
+        <a href="doza.html" target="_blank" class="portfolio-card">
+            <img src="collab/doza/2.PNG" alt="Doza">
+            <span>DOZA</span>
+        </a>
 
-    <a href="doza.html" target="_blank" class="portfolio-card">
-      <img src="collab/doza/2.PNG" alt="Doza">
-      <span>DOZA</span>
-    </a>
-
-    <a href="dziki-las.html" target="_blank" class="portfolio-card">
-      <img src="collab/dzikilas/1.PNG" alt="Dziki Las">
-      <span>DZIKI LAS</span>
-    </a>
-
-  </div>
-</section>    
-
-  <h2>Foto</h2>
-
-  <div class="gallery-grid">
-    <img src="portfolio/foto/1.jpg" alt="Zdjęcie 1">
-    <img src="portfolio/foto/2.jpg" alt="Zdjęcie 2">
-    <img src="portfolio/foto/3.jpg" alt="Zdjęcie 3">
-    <img src="portfolio/foto/4.jpg" alt="Zdjęcie 4">
-    <img src="portfolio/foto/5.jpg" alt="Zdjęcie 5">
-    <img src="portfolio/foto/6.jpg" alt="Zdjęcie 6">
-    <img src="portfolio/foto/7.jpg" alt="Zdjęcie 1">
-    <img src="portfolio/foto/8.jpg" alt="Zdjęcie 2">
-    <img src="portfolio/foto/9.jpg" alt="Zdjęcie 3">
-    <img src="portfolio/foto/10.jpg" alt="Zdjęcie 4">
-    <img src="portfolio/foto/11.jpg" alt="Zdjęcie 5">
-    <img src="portfolio/foto/12.jpg" alt="Zdjęcie 6">
-    <img src="portfolio/foto/13.jpg" alt="Zdjęcie 4">
-    <img src="portfolio/foto/14.jpg" alt="Zdjęcie 5">
-    <img src="portfolio/foto/15.jpg" alt="Zdjęcie 6">
-    <img src="portfolio/foto/16.jpg" alt="Zdjęcie 6">
-  </div>
+        <a href="dziki-las.html" target="_blank" class="portfolio-card">
+            <img src="collab/dzikilas/1.PNG" alt="Dziki Las">
+            <span>DZIKI LAS</span>
+        </a>
+    </div>
 </section>
 
-<!-- LIGHTBOX -->
+<section id="foto" class="gallery-section">
+    <h2>Foto</h2>
+
+    <div class="gallery-grid">
+        <img src="portfolio/foto/1.jpg" alt="Zdjęcie 1">
+        <img src="portfolio/foto/2.jpg" alt="Zdjęcie 2">
+        <img src="portfolio/foto/3.jpg" alt="Zdjęcie 3">
+        <img src="portfolio/foto/4.jpg" alt="Zdjęcie 4">
+        <img src="portfolio/foto/5.jpg" alt="Zdjęcie 5">
+        <img src="portfolio/foto/6.jpg" alt="Zdjęcie 6">
+        <img src="portfolio/foto/7.jpg" alt="Zdjęcie 7">
+        <img src="portfolio/foto/8.jpg" alt="Zdjęcie 8">
+        <img src="portfolio/foto/9.jpg" alt="Zdjęcie 9">
+        <img src="portfolio/foto/10.jpg" alt="Zdjęcie 10">
+        <img src="portfolio/foto/11.jpg" alt="Zdjęcie 11">
+        <img src="portfolio/foto/12.jpg" alt="Zdjęcie 12">
+        <img src="portfolio/foto/13.jpg" alt="Zdjęcie 13">
+        <img src="portfolio/foto/14.jpg" alt="Zdjęcie 14">
+        <img src="portfolio/foto/15.jpg" alt="Zdjęcie 15">
+        <img src="portfolio/foto/16.jpg" alt="Zdjęcie 16">
+    </div>
+</section>
+
 <div class="lightbox">
-  <span class="close-lightbox">&times;</span>
-  <img class="lightbox-img" src="" alt="">
-
-  <button class="lightbox-arrow lightbox-prev">&#10094;</button>
-  <img class="lightbox-img" src="" alt="">
-  <button class="lightbox-arrow lightbox-next">&#10095;</button>
-</div>
-
+    <span class="close-lightbox">&times;</span>
+    <button class="lightbox-arrow lightbox-prev">&#10094;</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-arrow lightbox-next">&#10095;</button>
 </div>
 
 <section id="video" class="gallery-section video-gallery">
-  <h2>Video</h2>
+    <h2>Video</h2>
 
-  <div class="video-grid">
+    <div class="video-grid">
+        <div class="video-card" data-video="portfolio/video/1.mp4">
+            <img src="portfolio/okladki/1.png" alt="Video 1">
+            <span class="play-btn">▶</span>
+        </div>
 
-    <div class="video-card" data-video="portfolio/video/1.mp4">
-      <img src="portfolio/okladki/1.png" alt="Video 1">
-      <span class="play-btn">▶</span>
+        <div class="video-card" data-video="portfolio/video/2.mp4">
+            <img src="portfolio/okladki/2.png" alt="Video 2">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/3.mp4">
+            <img src="portfolio/okladki/3.png" alt="Video 3">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/4.mp4">
+            <img src="portfolio/okladki/4.png" alt="Video 4">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/5.mp4">
+            <img src="portfolio/okladki/5.png" alt="Video 5">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/6.mp4">
+            <img src="portfolio/okladki/6.png" alt="Video 6">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/7.mp4">
+            <img src="portfolio/okladki/7.png" alt="Video 7">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/8.mp4">
+            <img src="portfolio/okladki/8.png" alt="Video 8">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/9.mp4">
+            <img src="portfolio/okladki/9.png" alt="Video 9">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/10.mp4">
+            <img src="portfolio/okladki/10.png" alt="Video 10">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/11.mp4">
+            <img src="portfolio/okladki/11.png" alt="Video 11">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/12.mp4">
+            <img src="portfolio/okladki/12.png" alt="Video 12">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/13.mp4">
+            <img src="portfolio/okladki/13.png" alt="Video 13">
+            <span class="play-btn">▶</span>
+        </div>
+
+        <div class="video-card" data-video="portfolio/video/14.mp4">
+            <img src="portfolio/okladki/14.png" alt="Video 14">
+            <span class="play-btn">▶</span>
+        </div>
     </div>
-
-    <div class="video-card" data-video="portfolio/video/2.mp4">
-     <img src="portfolio/okladki/2.png" alt="Video 2">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/3.mp4">
-      <img src="portfolio/okladki/3.png" alt="Video 3">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/4.mp4">
-      <img src="portfolio/okladki/4.png" alt="Video 4">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/5.mp4">
-      <img src="portfolio/okladki/5.png" alt="Video 5">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/6.mp4">
-      <img src="portfolio/okladki/6.png" alt="Video 6">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/7.mp4">
-       <img src="portfolio/okladki/7.png" alt="Video 7">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/8.mp4">
-      <img src="portfolio/okladki/8.png" alt="Video 8">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/9.mp4">
-      <img src="portfolio/okladki/9.png" alt="Video 9">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/10.mp4">
-      <img src="portfolio/okladki/10.png" alt="Video 10">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/11.mp4">
-      <img src="portfolio/okladki/11.png" alt="Video 11">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/12.mp4">
-      <img src="portfolio/okladki/12.png" alt="Video 12">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/13.mp4">
-          <img src="portfolio/okladki/13.png" alt="Video 13">
-      <span class="play-btn">▶</span>
-    </div>
-
-    <div class="video-card" data-video="portfolio/video/14.mp4">
-      <img src="portfolio/okladki/14.png" alt="Video 14">
-      <span class="play-btn">▶</span>
-    </div>
-
-  </div>
 </section>
 
 <div class="video-lightbox">
-  <span class="close-video">&times;</span>
-  <video class="lightbox-video" controls playsinline></video>
-</div>
-<div class="video-lightbox">
-  <span class="close-video">&times;</span>
-  <video class="lightbox-video" controls playsinline></video>
+    <span class="close-video">&times;</span>
+    <video class="lightbox-video" controls playsinline></video>
 </div>
 
-    <section id="contact" class="section-reverse">
-  <div class="section-content">
+<section id="contact" class="section-reverse">
+    <div class="section-content">
 
-    <div class="section-text">
-      <h2>Kontakt</h2>
+        <div class="section-text">
+            <h2>Kontakt</h2>
 
-      <p>
-    Opowiedz mi o swojej wizji na wymarzoną sesję
-      </p>
+            <p>Opowiedz mi o swojej wizji na wymarzoną sesję</p>
 
-     <form action="https://formspree.io/f/mgoqqwee" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/mgoqqwee" method="POST" class="contact-form">
 
-    <input
-        type="text"
-        name="imie"
-        placeholder="1. Imię"
-        required
-    >
+                <input type="text" name="imie" placeholder="1. Imię" required>
 
-    <input
-        type="email"
-        name="email"
-        placeholder="2. Adres e-mail"
-        required
-    >
+                <input type="email" name="email" placeholder="2. Adres e-mail" required>
 
-    <input
-        type="text"
-        name="miasto"
-        placeholder="3. Miasto"
-        required
-    >
+                <input type="text" name="miasto" placeholder="3. Miasto" required>
 
-    <textarea
-        name="rodzaj_sesji"
-        placeholder="4. Jaki typ sesji Cię interesuje? (solo, dla pary, ciążowa, rodzinna, reportaż z wydarzenia, inna)"
-        required
-    ></textarea>
+                <textarea name="rodzaj_sesji" placeholder="4. Jaki typ sesji Cię interesuje? (solo, dla pary, ciążowa, rodzinna, reportaż z wydarzenia, inna)" required></textarea>
 
-    <textarea
-        name="wizja_sesji"
-        placeholder="5. Opowiedz mi trochę o swojej wizji sesji ze mną (inspiracje, miejsce)"
-        required
-    ></textarea>
+                <textarea name="wizja_sesji" placeholder="5. Opowiedz mi trochę o swojej wizji sesji ze mną (inspiracje, miejsce)" required></textarea>
 
-    <textarea
-        name="lubiane_zdjecia"
-        placeholder="6. Czy są rzeczy, których nie chcesz na zdjęciach? Lub coś co Ci się nie podoba?"
-    ></textarea>
+                <textarea name="lubiane_zdjecia" placeholder="6. Czy są rzeczy, których nie chcesz na zdjęciach? Lub coś co Ci się nie podoba?"></textarea>
 
-    <textarea
-        name="poznal_mnie"
-        placeholder="7. Jak mnie znalazłeś/aś? :)"
-    ></textarea>
+                <textarea name="poznal_mnie" placeholder="7. Jak mnie znalazłeś/aś? :)"></textarea>
 
-    <button type="submit">
-        Wyślij formularz
-    </button>
+                <button type="submit">Wyślij formularz</button>
 
-</form>
-    
+            </form>
+        </div>
+
     </div>
-
-  </div>
 </section>
-    
-    <!-- JS -->
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
