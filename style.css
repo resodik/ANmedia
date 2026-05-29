@@ -363,6 +363,43 @@ section {
     background: rgba(0,0,0,0.15);
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    font-size: 15px;
+    font-family: 'Cinzel', serif;
+}
+
+.contact-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    background: #111;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Cinzel', serif;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
 
 
 @media (max-width: 768px) {
