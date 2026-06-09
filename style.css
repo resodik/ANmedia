@@ -346,22 +346,25 @@ section {
 
 #about .section-photo {
     height: auto;
+    overflow: visible;
 }
 
 #about .section-photo > img:first-child {
-    height: 520px;
-}
-
-.about-extra-photo {
-    display: none !important;
-    margin-top: 24px;
     width: 100%;
     height: 520px;
     object-fit: cover;
 }
 
+.about-extra-photo {
+    display: none;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
 .mobile-collapse.open ~ .section-photo .about-extra-photo {
-    display: block !important;
+    display: block;
 }
 
 /* ===== GALERIA FOTO ===== */
@@ -380,25 +383,24 @@ section {
 }
 
 .gallery-grid {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-}
-
-.gallery-grid img,
-.gallery-grid video {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
-    display: block;
-    background: #111;
-    transition: 0.4s ease;
+    columns: 4;
+    column-gap: 20px;
 }
 
 .gallery-grid img {
-    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 12px;
+    break-inside: avoid;
+    transition: 0.4s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
 }
 
 .gallery-grid img:hover,
@@ -605,7 +607,7 @@ section {
     border: 1px solid #d9d9d9;
     background: #fff;
     font-size: 15px;
-    font-family: 'Cinzel', serif;
+    font-family: 'Berylium', serif;
 }
 
 .contact-form textarea {
@@ -621,7 +623,7 @@ section {
     font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
-    font-family: 'Cinzel', serif;
+    font-family: 'Berylium', serif;
 }
 
 .contact-form button:hover {
@@ -636,12 +638,7 @@ section {
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery-grid img,
-    .gallery-grid video {
-        height: 300px;
+        columns: 3;
     }
 }
 
@@ -659,6 +656,10 @@ section {
 
     .menu a {
         font-size: 14px;
+    }
+
+    .gallery-grid {
+        columns: 2;
     }
 
     .hero-slider {
@@ -735,13 +736,26 @@ section {
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
+        columns: 1;
     }
 
-    .gallery-grid img,
-    .gallery-grid video {
-        height: 320px;
+    @media (max-width: 1200px) {
+    .gallery-grid {
+        columns: 3;
     }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        columns: 1;
+    }
+}
 
     .video-grid {
         grid-template-columns: 1fr;
