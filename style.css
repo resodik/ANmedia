@@ -353,15 +353,15 @@ section {
 }
 
 .about-extra-photo {
-    display: none;
+    display: none !important;
     margin-top: 24px;
     width: 100%;
     height: 520px;
     object-fit: cover;
 }
 
-.mobile-collapse.open + .section-photo .about-extra-photo {
-    display: block;
+.mobile-collapse.open ~ .section-photo .about-extra-photo {
+    display: block !important;
 }
 
 /* ===== GALERIA FOTO ===== */
