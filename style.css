@@ -1,8 +1,34 @@
+@font-face {
+    font-family: 'Berylium';
+    src: url('fonts/Berylium.woff2') format('woff2'),
+         url('fonts/Berylium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cinzel', serif;
+}
+
+body,
+p,
+input,
+textarea,
+select,
+button {
+    font-family: 'Berylium', serif;
+}
+
+h1,
+h2,
+h3,
+.menu a,
+.logo,
+.portfolio-card span,
+.collab-card span {
+    font-family: 'Allura', cursive;
 }
 
 html {
@@ -312,6 +338,30 @@ section {
 
 #contact {
     background: #f5f5f5;
+}
+
+#about .section-content {
+    align-items: start;
+}
+
+#about .section-photo {
+    height: auto;
+}
+
+#about .section-photo > img:first-child {
+    height: 520px;
+}
+
+.about-extra-photo {
+    display: none;
+    margin-top: 24px;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.mobile-collapse.open + .section-photo .about-extra-photo {
+    display: block;
 }
 
 /* ===== GALERIA FOTO ===== */
