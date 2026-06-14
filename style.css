@@ -116,7 +116,7 @@ nav {
 }
 
 .slide-1 img {
-    object-position: center bottom;
+    object-position: center top;
 }
 
 .slide.active {
