@@ -48,19 +48,21 @@ links.forEach(link => {
 const readMoreButtons = document.querySelectorAll(".read-more-btn");
 
 readMoreButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        const parent = button.closest(".mobile-collapse");
-        const section = button.closest("#about");
-        const photo = section.querySelector(".about-extra-photo");
+    const section = button.closest("#about");
+    const parent = button.closest(".mobile-collapse");
+    const photo = section.querySelector(".about-extra-photo");
 
+    photo.classList.remove("is-visible");
+
+    button.addEventListener("click", () => {
         parent.classList.toggle("open");
 
         if (parent.classList.contains("open")) {
             button.textContent = "Zwiń";
-            photo.style.display = "block";
+            photo.classList.add("is-visible");
         } else {
             button.textContent = "Czytaj więcej";
-            photo.style.display = "none";
+            photo.classList.remove("is-visible");
         }
     });
 });
