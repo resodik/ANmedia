@@ -26,10 +26,7 @@ h2,
 h3,
 .menu a,
 .logo,
-.portfolio-card span,
-.collab-card span {
-    font-family: 'Cinzel', cursive;
-}
+.portfolio-card span {
 
 html {
     scroll-behavior: smooth;
@@ -280,7 +277,6 @@ section {
 
 /* ===== PORTFOLIO / WSPÓŁPRACE ===== */
 
-.collab-choice,
 .portfolio-choice {
     max-width: 1200px;
     margin: 60px auto 0;
@@ -289,7 +285,6 @@ section {
     gap: 40px;
 }
 
-.collab-card,
 .portfolio-card {
     position: relative;
     height: 520px;
@@ -299,7 +294,6 @@ section {
     color: white;
 }
 
-.collab-card img,
 .portfolio-card img {
     width: 100%;
     height: 100%;
@@ -307,7 +301,6 @@ section {
     transition: 0.6s ease;
 }
 
-.collab-card::after,
 .portfolio-card::after {
     content: "";
     position: absolute;
@@ -316,7 +309,6 @@ section {
     transition: 0.4s ease;
 }
 
-.collab-card span,
 .portfolio-card span {
     position: absolute;
     inset: 0;
@@ -329,12 +321,10 @@ section {
     font-weight: 700;
 }
 
-.collab-card:hover img,
 .portfolio-card:hover img {
     transform: scale(1.08);
 }
 
-.collab-card:hover::after,
 .portfolio-card:hover::after {
     background: rgba(0,0,0,0.15);
 }
@@ -413,14 +403,9 @@ section {
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.02);
-}
-
-.gallery-grid img:hover,
-.gallery-grid video:hover {
     transform: scale(1.03);
 }
-
+    
 /* ===== LIGHTBOX FOTO ===== */
 
 .lightbox {
@@ -743,15 +728,13 @@ section {
         line-height: 1.8;
     }
 
-    .collab-choice,
-    .portfolio-choice {
-        grid-template-columns: 1fr;
-    }
+.portfolio-choice {
+    grid-template-columns: 1fr;
+}
 
-    .collab-card,
-    .portfolio-card {
-        height: 360px;
-    }
+.portfolio-card {
+    height: 360px;
+}
 }
 
 @media (max-width: 600px) {
