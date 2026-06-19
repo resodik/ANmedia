@@ -539,14 +539,35 @@ section {
 
 .play-btn {
     position: absolute;
-    inset: 0;
-    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+
     color: white;
-    font-size: 54px;
-    text-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    font-size: 28px;
+
+    border: 2px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.video-card:hover .play-btn {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(255,255,255,0.25);
 }
 
 .video-lightbox {
