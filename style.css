@@ -246,19 +246,36 @@ section {
 .extra-text {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.5s ease;
 }
 
 .mobile-collapse.open .extra-text {
     max-height: 3000px;
 }
 
+.about-extra-photo {
+    display: none;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
 .read-more-btn {
     margin-top: 20px;
-    padding: 12px 20px;
+    padding: 14px 28px;
     border: none;
     border-radius: 12px;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Berylium', serif;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background: #333;
 }
 
 /* ===== PORTFOLIO / WSPÓŁPRACE ===== */
@@ -361,10 +378,6 @@ section {
     height: 520px;
     object-fit: cover;
     margin-top: 20px;
-}
-
-.mobile-collapse.open ~ .section-photo .about-extra-photo {
-    display: block;
 }
 
 /* ===== GALERIA FOTO ===== */
@@ -739,24 +752,6 @@ section {
         columns: 1;
     }
 
-    @media (max-width: 1200px) {
-    .gallery-grid {
-        columns: 3;
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery-grid {
-        columns: 2;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        columns: 1;
-    }
-}
-
     .video-grid {
         grid-template-columns: 1fr;
     }
@@ -840,5 +835,18 @@ section {
         width: 42px;
         height: 42px;
         font-size: 19px;
+    }
+}
+
+@media (max-width: 768px) {
+    .read-more-btn {
+        width: auto;
+        display: inline-block;
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+
+    .about-extra-photo {
+        height: 360px;
     }
 }
