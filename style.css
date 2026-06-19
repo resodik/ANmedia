@@ -551,20 +551,17 @@ section {
     justify-content: center;
 
     border-radius: 50%;
-    background: rgba(255,255,255,0.08);
+    border: 2px solid white;
 
     color: white;
-    font-size: 22px;
-
-    backdrop-filter: blur(4px);
+    font-size: 20px;
 
     transition: 0.3s ease;
     z-index: 2;
 }
 
 .video-card:hover .play-btn {
-    background: rgba(255,255,255,0.15);
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1.08);
 }
 
 .video-lightbox {
