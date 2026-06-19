@@ -91,3 +91,41 @@ links.forEach(link => {
 
     });
 });
+
+const videoCards = document.querySelectorAll(".video-card");
+const videoLightbox = document.querySelector(".video-lightbox");
+const lightboxVideo = document.querySelector(".lightbox-video");
+const closeVideo = document.querySelector(".close-video");
+
+if (videoCards.length && videoLightbox && lightboxVideo && closeVideo) {
+    videoCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const videoSrc = card.getAttribute("data-video");
+
+            lightboxVideo.src = videoSrc;
+            videoLightbox.classList.add("active");
+            lightboxVideo.play();
+        });
+    });
+
+    function closeVideoLightbox() {
+        videoLightbox.classList.remove("active");
+        lightboxVideo.pause();
+        lightboxVideo.currentTime = 0;
+        lightboxVideo.src = "";
+    }
+
+    closeVideo.addEventListener("click", closeVideoLightbox);
+
+    videoLightbox.addEventListener("click", (e) => {
+        if (e.target === videoLightbox) {
+            closeVideoLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && videoLightbox.classList.contains("active")) {
+            closeVideoLightbox();
+        }
+    });
+}
