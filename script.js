@@ -171,3 +171,11 @@ document.addEventListener("keydown", (e) => {
         closeVideoLightbox();
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const photo = document.querySelector(".about-extra-photo");
+
+    if (photo) {
+        photo.style.display = "none";
+    }
+});
