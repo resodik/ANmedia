@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -53,12 +54,10 @@
 
 <!-- LIGHTBOX -->
 <div class="lightbox">
-  <span class="close-lightbox">&times;</span>
-  <img class="lightbox-img" src="" alt="">
-
-  <button class="lightbox-arrow lightbox-prev">&#10094;</button>
-  <img class="lightbox-img" src="" alt="">
-  <button class="lightbox-arrow lightbox-next">&#10095;</button>
+    <span class="close-lightbox">&times;</span>
+    <button class="lightbox-arrow lightbox-prev">&#10094;</button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-arrow lightbox-next">&#10095;</button>
 </div>
 
     <section id="dziki-las" class="gallery-section video-gallery">
@@ -85,8 +84,14 @@
     <i class="fa-solid fa-play"></i>
 </span>
         </div>
+
     </div>
 </section>
+
+    <div class="video-lightbox">
+    <span class="close-video">&times;</span>
+    <video class="lightbox-video" controls playsinline></video>
+</div>
     
     <!-- JS -->
     <script src="doza-script.js"></script>
@@ -95,4 +100,3 @@
 
 </html>
 
-</div>
